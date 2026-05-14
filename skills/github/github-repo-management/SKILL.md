@@ -1,6 +1,6 @@
 ---
 name: github-repo-management
-description: Clone, create, fork, configure, and manage GitHub repositories. Manage remotes, secrets, releases, and workflows. Works with gh CLI or falls back to git + GitHub REST API via curl.
+description: "Clone/create/fork repos; manage remotes, releases."
 version: 1.1.0
 author: Hermes Agent
 license: MIT
@@ -465,7 +465,88 @@ curl -s -X POST \
   -d '{"ref": "main", "inputs": {"environment": "staging"}}'
 ```
 
-## 10. Gists
+## 10. Cleaning Bloated Git History (Orphan Branch Method)
+
+When runtime data files (state.db, node_modules, sessions/) have been committed to a git repo, the pack becomes too large to push over slow/proxy connections. The orphan branch method creates a clean slate:
+
+```bash
+# 1. Update .gitignore first to prevent reoccurrence
+cat >> .gitignore << 'EOF'
+
+# Runtime data — not for git
+state.db
+state.db-wal
+state.db-shm
+sessions/
+memories/
+models_dev_cache.json
+.skills_prompt_snapshot.json
+node_modules/
+EOF
+
+# 2. Remove large tracked files if not already ignored
+git rm --cached -r state.db state.db-wal state.db-shm sessions/ memories/ 2>/dev/null || true
+
+# 3. Create orphan branch (no shared history)
+git checkout --orphan clean-branch
+
+# 4. Stage and commit
+git add -A
+git commit -m "Initial: clean config (no runtime data)"
+
+# 5. Replace old branch
+git branch -D main
+git branch -m main
+
+# 6. CRITICAL: Garbage collect old objects
+# The orphan branch creates NEW objects but old objects stay in the pack.
+# Without gc, `git count-objects -vH` still shows the old 20MB+ pack.
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
+
+# 7. Verify pack size dropped
+git count-objects -vH | head -8
+# Expected: size-pack should drop from ~20MB to ~7MB (for a 900-file repo)
+
+# 8. Force push (rewrites remote history)
+git push -f origin main
+```
+
+**When to use this:**
+- The repo has large files in history that should never have been committed
+- Pushes consistently time out (HTTP 408) over proxies
+- The repo is used as a backup/config repo (not shared with other developers)
+- User has been warned that all previous commits are lost
+
+**Detecting which files are bloating the repo:**
+
+When investigating a bloated repo, be careful about the difference between
+tracked and untracked files:
+
+```bash
+# BAD: includes untracked files too — overestimates the pack
+du -sh *
+
+# GOOD: only shows tracked files — accurate for pack size
+git ls-files | xargs du -ch 2>/dev/null | tail -1
+
+# Find the largest tracked files
+git ls-files | xargs du -ch 2>/dev/null | sort -rh | head -10
+
+# Check actual pack size (what Git will actually transfer)
+git count-objects -vH | head -8
+```
+
+This distinction matters because large untracked files (like state.db, node_modules
+that are now gitignored) will show up in `du -sh` but don't affect the push pack.
+Always use `git ls-files | xargs du` to understand what's actually in the pack.
+
+**When NOT to use this:**
+- The repo is shared with collaborators who have pulled the history
+- The repo has PRs, issues, or releases tied to specific commits
+- You just need to remove a single file from recent commits (use `git rm --cached` instead)
+
+## 11. Gists
 
 **With gh:**
 

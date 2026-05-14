@@ -377,3 +377,32 @@ OSError: [Errno 5] Input/output error
 2026-05-14 22:58:24,218 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
 2026-05-14 22:58:25,842 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
 2026-05-14 23:04:22,643 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-14 23:05:55,159 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:30:07,915 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:36:10,768 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:38:59,870 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='全都默认用中文'
+2026-05-14 23:39:05,226 INFO [20260514_105130_1a622ca0] agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:05,250 INFO [20260514_105130_1a622ca0] agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:28,792 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-14 23:39:28,793 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-14 23:39:28,793 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-14 23:39:29,064 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-14 23:39:30,145 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-14 23:39:31,012 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:33,583 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:33,594 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:34,022 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:34,033 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:39:38,937 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=39.1s api_calls=2 response=12 chars
+2026-05-14 23:39:38,945 INFO gateway.platforms.base: [Whatsapp] Sending response (12 chars) to 98222261428379@lid
+2026-05-14 23:39:41,001 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:40:03,567 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:40:09,924 WARNING gateway.platforms.base: [Whatsapp] Send failed:  — trying plain-text fallback
+2026-05-14 23:40:30,007 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-14 23:41:50,925 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:42:19,311 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:42:47,535 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:43:40,689 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:55:03,173 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-15 00:00:16,275 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-15 00:00:16,288 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)

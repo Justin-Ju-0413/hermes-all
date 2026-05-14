@@ -74,3 +74,4 @@ Traceback (most recent call last):
 OSError: [Errno 5] Input/output error
 2026-05-13 23:32:37,907 ERROR [20260513_233115_459a25] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ired is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
 2026-05-14 04:00:57,025 ERROR cron.scheduler: Job 'b089073efba3': delivery error: WhatsApp bridge error (503): {"error":"Not connected to WhatsApp"}
+2026-05-14 23:40:09,924 WARNING gateway.platforms.base: [Whatsapp] Send failed:  — trying plain-text fallback

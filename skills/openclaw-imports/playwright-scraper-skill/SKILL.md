@@ -203,6 +203,17 @@ Lessons learned from our testing:
 2. Use `waitUntil: 'networkidle'` or `'domcontentloaded'`
 3. Check if login is required
 
+### Issue: "Executable doesn't exist" — Playwright browser not found
+**Solution:** Run `npx playwright install chromium` after `npm install`. This is a required step, not optional. The error looks like:
+```
+browserType.launch: Executable doesn't exist at /path/to/ms-playwright/chromium-xxx/chrome-linux/chrome
+```
+### Issue: Google / Bing blocks headless browser from cloud VPS
+**Solution:** Google and Bing often block headless Chromium from VPS IP ranges (AWS, DigitalOcean, Hetzner, etc.), causing indefinite timeouts regardless of stealth config. When this happens:
+1. **Fall back to API-based sources** — HN Firebase API (`hacker-news.firebaseio.com`), Ars Technica RSS (`feeds.arstechnica.com`), or the site's own REST API
+2. Try with a different search engine or targeted news source instead of Google
+3. As a last resort, use a residential proxy or rotate IPs
+
 ---
 
 ## 📝 Memory & Experience

@@ -125,3 +125,7 @@
 2026-05-14 12:39:44,229 INFO gateway.platforms.base: [Whatsapp] Sending response (215 chars) to 98222261428379@lid
 2026-05-14 13:43:09,266 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:8613699871152 (idle=3805s)
 2026-05-14 13:43:09,267 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-14 23:38:59,870 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='全都默认用中文'
+2026-05-14 23:39:38,937 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=39.1s api_calls=2 response=12 chars
+2026-05-14 23:39:38,945 INFO gateway.platforms.base: [Whatsapp] Sending response (12 chars) to 98222261428379@lid
+2026-05-14 23:40:09,924 WARNING gateway.platforms.base: [Whatsapp] Send failed:  — trying plain-text fallback
