@@ -644,3 +644,8 @@ task: <Task pending name='Task-7005' coro=<Application._handle_exception.<locals
 2026-05-15 01:03:20,917 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
 2026-05-15 03:00:23,301 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
 2026-05-15 03:00:23,396 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-15 03:30:45,043 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-15 04:00:31,629 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-15 04:04:38,772 INFO gateway.run: Session expiry: 1 sessions to finalize (whatsapp:1)
+2026-05-15 04:04:38,776 INFO gateway.run: Session expiry done: 1 finalized
+2026-05-15 06:00:54,350 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)

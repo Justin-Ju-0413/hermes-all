@@ -131,3 +131,5 @@
 2026-05-14 23:40:09,924 WARNING gateway.platforms.base: [Whatsapp] Send failed:  — trying plain-text fallback
 2026-05-15 00:44:19,270 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:8613699871152 (idle=3880s)
 2026-05-15 00:44:19,272 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-15 04:04:38,772 INFO gateway.run: Session expiry: 1 sessions to finalize (whatsapp:1)
+2026-05-15 04:04:38,776 INFO gateway.run: Session expiry done: 1 finalized
