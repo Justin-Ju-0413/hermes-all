@@ -47,4 +47,6 @@ git add -A 2>/dev/null
 git diff --cached --quiet && echo "nothing to commit" && exit 0
 
 git commit -m "backup: $(date '+%Y-%m-%d %H:%M')"
-git push origin main 2>/dev/null && echo "backup pushed" || echo "push failed (network?)"
+
+# Push with direct connection (no proxy) since server can reach GitHub directly
+git -c http.proxy="" push origin main 2>/dev/null && echo "backup pushed" || echo "push failed (network?)"
