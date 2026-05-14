@@ -67,6 +67,18 @@ curl -sL "https://api.github.com/repos/openclaw/clawhub/commits?per_page=5" -o /
 - `openclaw/clawhub` — official registry (8,598⭐)
 - `prompt-security/clawsec` — security suite (983⭐)
 - `ValueCell-ai/ClawX` — desktop GUI for OpenClaw (7,174⭐)
+- `mvanhorn/last30days-skill` — multi-source AI search engine (⭐25K+, #1 GitHub Trending, essential ecosystem signal)
+
+**Cross-reference trending repos by stars (not just by query match):**
+```bash
+# Search ALL trending agent skills by star growth (broad net)
+curl -sL "https://api.github.com/search/repositories?q=topic%3Aopenclaw+skill+topic%3Aagent+sort%3Astars&per_page=10" -o /tmp/gh_trending.json
+```
+
+**Check last30days-skill repository for ecosystem pulse:**
+```bash
+curl -sL "https://api.github.com/repos/mvanhorn/last30days-skill/commits?per_page=5" -o /tmp/last30days_commits.json
+```
 
 **Check the awesome list for recent additions:**
 ```bash
@@ -199,11 +211,12 @@ When reviewing, note if two installed skills overlap in purpose:
 3. **Workspace path may not be what cron spec says** — Cron jobs sometimes hardcode `/root/.openclaw/workspace/` but the real writable workspace is at `/home/ubuntu/.openclaw/workspace/`. Before assuming the path from context, verify with `ls -la` and a test write. The `/root/` variant is typically owned by root (755) and gives "Permission denied" for the ubuntu user running Hermes. Pro tip: test-write a sentinel file first.
 
 4. **Git dubious ownership on cross-user repos** — Git 2.35+ refuses to operate on repos owned by a different user. Fix: `git config --global --add safe.directory <path>`. This commonly bites when the repo was initialized by root but used by ubuntu, or vice versa.
-2. **GitHub API rate limits** — Unauthenticated requests are limited to 60/hr. For heavy scouting, add token: `curl -H "Authorization: token $GITHUB_TOKEN" ...`
-3. **First run has no baseline** — Set status to "首次运行 / First run" and explain the novelty
-4. **awesome-openclaw-skills is slow to update** — Last commit may be weeks old; check `openclaw/clawhub` commits for fresher data
-5. **Memory may be unavailable in cron** — Always write to filesystem, don't rely on memory() tool
-6. **SKILL_SCOUT_SUMMARY.md might not exist** — Create it on first run
+5. **GitHub API rate limits** — Unauthenticated requests are limited to 60/hr. For heavy scouting, add token: `curl -H "Authorization: token $GITHUB_TOKEN" ...`
+6. **First run has no baseline** — Set status to "首次运行 / First run" and explain the novelty
+7. **awesome-openclaw-skills is slow to update** — Last commit may be weeks old; check `openclaw/clawhub` commits for fresher data. When the awesome list is >2 weeks stale, de-prioritize it and expand the `sort:stars` trending search instead—high-star repos like `mvanhorn/last30days-skill` will surface even if they aren't in the awesome list.
+8. **Memory may be unavailable in cron** — Always write to filesystem, don't rely on memory() tool
+9. **SKILL_SCOUT_SUMMARY.md may not exist** — Create it on first run
+10. **Sibling agent race on SKILL_SCOUT_SUMMARY.md** — When writing the cumulative summary, a sibling cron agent may have modified it between your `read` and `write`. If you get a `modified by sibling subagent` warning from your write_file tool: read the file again, merge your new content with the sibling's changes (don't overwrite), then re-write. Use `---` separators between date sections so multiple runs can be appended idempotently.
 
 ## Required Tools
 
