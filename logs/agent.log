@@ -1,0 +1,379 @@
+2026-05-11 02:36:16,237 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:36:16,238 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:36:16,240 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:36:16,675 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:36:18,076 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-05-11 02:36:18,104 INFO gateway.run: Starting Hermes Gateway...
+2026-05-11 02:36:18,105 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-11 02:36:18,105 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-11 02:36:18,110 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-05-11 02:36:18,112 WARNING gateway.run: No messaging platforms enabled.
+2026-05-11 02:36:18,112 INFO gateway.run: Gateway will continue running for cron job execution.
+2026-05-11 02:36:18,121 INFO gateway.run: Channel directory built: 0 target(s)
+2026-05-11 02:36:18,122 INFO gateway.run: Press Ctrl+C to stop
+2026-05-11 02:36:18,164 INFO gateway.run: Cron ticker started (interval=60s)
+2026-05-11 02:36:23,128 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-05-11 02:40:02,062 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-05-11 02:40:02,234 INFO tools.tirith_security: tirith installed to /home/ubuntu/.hermes/bin/tirith (SHA-256 only)
+2026-05-11 02:43:37,318 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:43:37,318 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:43:37,319 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:43:37,602 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:49:06,949 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:49:06,949 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:49:06,950 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:49:07,225 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:49:08,401 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-11 02:49:09,784 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:49:18,851 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:49:18,862 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:49:19,321 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:49:19,332 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:50:45,001 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:50:45,770 INFO [20260511_024909_8e9eec] agent.credential_pool: credential pool: marking DEEPSEEK_API_KEY exhausted (status=401), rotating
+2026-05-11 02:50:45,774 INFO [20260511_024909_8e9eec] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-05-11 02:50:45,782 ERROR [20260511_024909_8e9eec] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 02:52:00,855 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:52:00,856 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:52:00,856 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:52:01,048 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:52:04,172 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:52:04,173 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:52:04,174 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:52:04,548 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:52:05,677 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-11 02:52:06,443 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:08,937 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:08,948 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:09,442 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:09,456 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:11,325 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-05-11 02:52:11,328 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-05-11 02:52:12,586 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:52:13,175 ERROR [20260511_025206_4129e5] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 02:54:19,404 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:54:21,284 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:54:21,284 INFO agent.auxiliary_client: Auxiliary title_generation: using auto (deepseek-v4-flash) at https://api.deepseek.com/v1/
+2026-05-11 02:54:21,479 WARNING agent.title_generator: Title generation failed: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 02:55:39,165 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:56:14,373 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 02:56:14,373 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 02:56:14,374 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 02:56:14,643 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 02:56:15,776 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-11 02:56:16,543 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:56:19,011 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:56:19,022 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:56:19,515 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 02:56:19,526 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:21,839 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:00:21,840 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:00:21,840 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:00:22,103 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:00:23,202 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-11 03:00:24,150 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:26,926 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:26,939 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:27,509 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:27,524 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:00:33,982 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:05:40,162 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:05:40,319 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-11 03:05:52,301 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-05-11 03:05:52,342 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  ubuntu    151786  5.1  7.4 797624 283992 pts/0   Sl+  03:00   0:17 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes
+  ubuntu    171737  0.0  0.1   8320  3916 pts/3    Ss   03:05   0:00 /bin/bash -c shopt -u promptvars nullglob extglob nocaseglob dotglob; . '/home/ubuntu/.codebuddy/shell-snapshots/snapshot-bash-1778439732458-hyqrrw.sh' && eval 'loginctl enable-linger ubuntu 2>/dev/null; export XDG_RUNTIME_DIR=/run/user/$(id -u ubuntu); systemctl --user daemon-reload && systemctl --user restart hermes-gateway.service && sleep 2 && systemctl --user status hermes-gateway.service'
+  ubuntu    171778  0.0  0.1  18272  6296 pts/3    S+   03:05   0:00 systemctl --user restart hermes-gateway.service
+2026-05-11 03:05:52,345 INFO gateway.run: Stopping gateway...
+2026-05-11 03:05:52,413 INFO gateway.run: Gateway stopped
+2026-05-11 03:05:52,414 INFO gateway.run: Cron ticker stopped
+2026-05-11 03:05:52,414 INFO gateway.run: Exiting with code 1 (signal-initiated shutdown without restart request) so systemd Restart=on-failure can revive the gateway.
+2026-05-11 03:05:53,612 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:05:53,613 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:05:53,614 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:05:53,899 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:05:54,995 INFO gateway.run: Starting Hermes Gateway...
+2026-05-11 03:05:54,996 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-11 03:05:54,996 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-11 03:05:55,002 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-05-11 03:05:55,016 INFO gateway.run: Connecting to whatsapp...
+2026-05-11 03:05:55,024 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-05-11 03:06:25,021 ERROR gateway.run: ✗ whatsapp error: whatsapp connect timed out after 30s
+2026-05-11 03:06:26,028 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: whatsapp connect timed out after 30s
+2026-05-11 03:06:28,864 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:06:28,865 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:06:28,866 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:06:29,141 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:07:27,192 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:07:27,193 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:07:27,193 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:07:27,473 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:07:28,984 INFO gateway.run: Starting Hermes Gateway...
+2026-05-11 03:07:28,984 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-11 03:07:28,985 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-11 03:07:29,002 INFO gateway.run: Connecting to whatsapp...
+2026-05-11 03:07:29,012 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-05-11 03:07:59,009 ERROR gateway.run: ✗ whatsapp error: whatsapp connect timed out after 30s
+2026-05-11 03:08:00,016 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: whatsapp connect timed out after 30s
+2026-05-11 03:09:24,138 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:09:24,139 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:09:24,139 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:09:24,405 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:09:25,343 INFO gateway.run: Starting Hermes Gateway...
+2026-05-11 03:09:25,343 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-11 03:09:25,343 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-11 03:09:25,361 INFO gateway.run: Connecting to whatsapp...
+2026-05-11 03:09:25,369 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-05-11 03:09:29,905 INFO gateway.run: Received SIGTERM/SIGINT — initiating shutdown
+2026-05-11 03:09:29,922 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  ubuntu    151786  4.1  7.6 871340 293316 pts/0   Sl+  03:00   0:22 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes
+  ubuntu    173238  0.9  2.0  94892 79480 pts/3    S+   03:06   0:01 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes setup
+  ubuntu    174783  0.5  2.6 11622888 100732 pts/3 Sl+  03:06   0:00 node /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js --pair-only --session /home/ubuntu/.hermes/whatsapp/session
+  ubuntu    184493 29.7  3.5 11853872 136596 ?     Ssl  03:09   0:01 node /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js --port 3000 --session /home/ubuntu/.hermes/whatsapp/session --mode self-chat
+  ubuntu    184730  0.0  0.1   8320  3912 pts/5    Ss   03:09   0:00 /bin/bash -c shopt -u promptvars nullglob extglob nocaseglob dotglob; . '/home/ubuntu/.codebuddy/shell-snapshots/snapshot-bash-1778439732458-hyqrrw.sh' && eval 'export XDG_RUNTIME_DIR=/run/user/$(id -u ubuntu); systemctl --user stop hermes-gateway.service 2>/dev/null && echo "Service stopped" || echo "Service not running"'
+  ubuntu    184751  0.0  0.1  18272  6408 pts/5    S+   03:09   0:00 systemctl --user stop hermes-gateway.service
+2026-05-11 03:09:29,923 INFO gateway.run: Stopping gateway...
+2026-05-11 03:09:29,985 INFO gateway.run: Gateway stopped
+2026-05-11 03:09:55,474 WARNING gateway.run: ✗ whatsapp failed to connect
+2026-05-11 03:09:56,484 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: failed to connect
+2026-05-11 03:10:00,920 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:15:57,941 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-11 03:15:57,942 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-11 03:15:57,943 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-11 03:15:57,967 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-11 03:15:58,857 INFO gateway.run: Starting Hermes Gateway...
+2026-05-11 03:15:58,858 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-11 03:15:58,859 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-11 03:15:58,868 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-05-11 03:15:58,888 INFO gateway.run: Connecting to whatsapp...
+2026-05-11 03:15:58,897 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-05-11 03:16:03,940 INFO gateway.run: ✓ whatsapp connected
+2026-05-11 03:16:03,945 INFO gateway.run: Gateway running with 1 platform(s)
+2026-05-11 03:16:03,952 INFO gateway.run: Channel directory built: 0 target(s)
+2026-05-11 03:16:04,954 INFO gateway.run: Press Ctrl+C to stop
+2026-05-11 03:16:05,019 INFO gateway.run: Cron ticker started (interval=60s)
+2026-05-11 03:16:09,958 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-05-11 03:17:47,317 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='你好'
+2026-05-11 03:17:48,788 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-11 03:17:50,364 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:17:50,816 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:17:53,225 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=5.9s api_calls=1 response=16 chars
+2026-05-11 03:17:53,232 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-11 03:17:53,243 INFO gateway.platforms.base: [Whatsapp] Sending response (16 chars) to 98222261428379@lid
+2026-05-11 03:17:57,475 INFO gateway.platforms.base: [Whatsapp] Sending response (123 chars) to 98222261428379@lid
+2026-05-11 03:23:34,873 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-11 03:23:56,729 ERROR asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<Application.run_async() done, defined at /root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py:620> exception=OSError(5, 'Input/output error')>
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.hermes/hermes-agent/cli.py", line 11878, in _signal_handler
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 746, in _run_async
+    result = await f
+             ^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 886, in run_async
+    return await _run_async(f)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 751, in _run_async
+    self._redraw(render_as_done=True)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 543, in _redraw
+    self.context.copy().run(run_in_context)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 524, in run_in_context
+    self.renderer.render(self, self.layout, is_done=render_as_done)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/renderer.py", line 732, in render
+    self.reset()
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/renderer.py", line 429, in reset
+    self.output.flush()
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/output/vt100.py", line 706, in flush
+    flush_stdout(self.stdout, data)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/output/flush_stdout.py", line 37, in flush_stdout
+    stdout.flush()
+OSError: [Errno 5] Input/output error
+2026-05-13 23:31:13,372 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-13 23:31:13,372 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-13 23:31:13,378 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-13 23:31:13,709 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-13 23:31:15,008 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-13 23:32:35,927 INFO agent.auxiliary_client: Auxiliary auto-detect: using api-key (MiniMax-M2.7) — skipped: openrouter, nous, local/custom
+2026-05-13 23:32:37,907 ERROR [20260513_233115_459a25] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ired is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-13 23:35:10,518 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-13 23:35:10,518 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-13 23:35:10,519 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-13 23:35:10,717 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-13 23:35:44,727 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-13 23:35:44,728 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-13 23:35:44,728 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-13 23:35:44,989 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-13 23:35:45,908 INFO gateway.run: Starting Hermes Gateway...
+2026-05-13 23:35:45,908 INFO gateway.run: Session storage: /home/ubuntu/.hermes/sessions
+2026-05-13 23:35:45,908 INFO gateway.run: Agent budget: max_iterations=90 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 90)
+2026-05-13 23:35:45,926 INFO gateway.run: Connecting to whatsapp...
+2026-05-13 23:35:45,933 INFO gateway.platforms.whatsapp: [Whatsapp] Bridge found at /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js
+2026-05-13 23:35:45,944 INFO gateway.run: ✓ whatsapp connected
+2026-05-13 23:35:45,946 INFO gateway.run: Gateway running with 1 platform(s)
+2026-05-13 23:35:45,953 INFO gateway.run: Channel directory built: 1 target(s)
+2026-05-13 23:35:46,039 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='你恢复了关于我和咩咩酱的记忆吗'
+2026-05-13 23:35:46,459 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-13 23:35:47,083 INFO gateway.run: Press Ctrl+C to stop
+2026-05-13 23:35:47,103 INFO gateway.run: Cron ticker started (interval=60s)
+2026-05-13 23:35:47,143 INFO cron.jobs: Job 'Skill Scout' missed its scheduled time (2026-05-12T01:00:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T01:00:00+08:00
+2026-05-13 23:35:47,144 INFO cron.jobs: Job '服务器健康检查' missed its scheduled time (2026-05-12T03:00:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T03:00:00+08:00
+2026-05-13 23:35:47,144 INFO cron.jobs: Job 'Hermes/OpenClaw 运行检查' missed its scheduled time (2026-05-11T03:30:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T03:30:00+08:00
+2026-05-13 23:35:47,145 INFO cron.jobs: Job '安全审计' missed its scheduled time (2026-05-11T04:00:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T04:00:00+08:00
+2026-05-13 23:35:47,147 INFO cron.jobs: Job 'GitHub Sync' missed its scheduled time (2026-05-11T06:00:00+08:00, grace=5400s). Fast-forwarding to next run: 2026-05-14T00:00:00+08:00
+2026-05-13 23:35:47,148 INFO cron.jobs: Job '每日自检汇总 10:00' missed its scheduled time (2026-05-11T10:00:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T10:00:00+08:00
+2026-05-13 23:35:47,149 INFO cron.jobs: Job '晨间科技要闻 08:30' missed its scheduled time (2026-05-11T08:30:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T08:30:00+08:00
+2026-05-13 23:35:47,152 INFO cron.jobs: Job '晚间科技要闻 18:30' missed its scheduled time (2026-05-11T18:30:00+08:00, grace=7200s). Fast-forwarding to next run: 2026-05-14T18:30:00+08:00
+2026-05-13 23:35:48,104 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:48,303 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-13 23:35:48,304 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-13 23:35:48,304 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-13 23:35:48,572 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-13 23:35:49,617 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-13 23:35:50,449 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:52,090 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-05-13 23:35:52,734 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:52,744 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:53,427 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:53,442 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:35:53,455 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:03,049 INFO gateway.run: Queued follow-up for session agent:main:whatsapp:dm:8613699871152: final stream delivery not confirmed; sending first response before continuing.
+2026-05-13 23:36:03,066 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-13 23:36:04,539 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=18.5s api_calls=1 response=33 chars
+2026-05-13 23:36:04,555 INFO gateway.platforms.base: [Whatsapp] Sending response (33 chars) to 98222261428379@lid
+2026-05-13 23:36:07,730 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:10,507 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-13 23:36:22,541 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='你好'
+2026-05-13 23:36:22,712 INFO [20260513_233546_a3b63ea5] agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:24,487 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=1.9s api_calls=1 response=16 chars
+2026-05-13 23:36:24,495 INFO gateway.platforms.base: [Whatsapp] Sending response (16 chars) to 98222261428379@lid
+2026-05-13 23:36:31,567 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='你之前的记忆恢复了吗'
+2026-05-13 23:36:34,756 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:34,807 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:34,814 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:36:36,172 INFO agent.auxiliary_client: Auxiliary session_search (async): connection error on auto (Connection error.), trying fallback
+2026-05-13 23:36:36,806 INFO agent.auxiliary_client: Auxiliary session_search: connection error on auto — falling back to api-key (MiniMax-M2.7)
+2026-05-13 23:36:37,101 INFO anthropic._base_client: Retrying request to /v1/messages in 0.427566 seconds
+2026-05-13 23:36:37,662 INFO anthropic._base_client: Retrying request to /v1/messages in 0.766178 seconds
+2026-05-13 23:36:39,573 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-13 23:37:02,230 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=30.7s api_calls=2 response=526 chars
+2026-05-13 23:37:02,237 INFO gateway.platforms.base: [Whatsapp] Sending response (526 chars) to 98222261428379@lid
+2026-05-14 00:00:47,464 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:00:47,478 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:12:10,913 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-14 00:12:10,913 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-14 00:12:10,914 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-14 00:12:11,211 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-14 00:12:12,340 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-14 00:12:13,327 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:12:16,046 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:12:16,061 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:12:16,664 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:12:16,677 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:17:36,229 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='我的git上应该有备份'
+2026-05-14 00:18:04,985 INFO gateway.run: Queued follow-up for session agent:main:whatsapp:dm:8613699871152: final stream delivery not confirmed; sending first response before continuing.
+2026-05-14 00:18:42,005 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=65.8s api_calls=7 response=233 chars
+2026-05-14 00:18:42,010 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:18:42,014 INFO gateway.platforms.base: [Whatsapp] Sending response (233 chars) to 98222261428379@lid
+2026-05-14 00:20:17,901 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 00:20:20,485 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-14 00:58:39,110 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='你好'
+2026-05-14 00:58:44,008 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=4.9s api_calls=1 response=13 chars
+2026-05-14 00:58:44,015 INFO gateway.platforms.base: [Whatsapp] Sending response (13 chars) to 98222261428379@lid
+2026-05-14 00:58:58,024 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='我之前配置过github ssh'
+2026-05-14 00:59:05,210 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=7.2s api_calls=2 response=201 chars
+2026-05-14 00:59:05,218 INFO gateway.platforms.base: [Whatsapp] Sending response (201 chars) to 98222261428379@lid
+2026-05-14 00:59:45,108 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='我之前系统被黑了吗'
+2026-05-14 01:00:07,148 INFO gateway.run: User approved 1 dangerous command(s) via /approve (pattern approved permanently)
+2026-05-14 01:00:15,273 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=30.2s api_calls=4 response=474 chars
+2026-05-14 01:00:15,284 INFO gateway.platforms.base: [Whatsapp] Sending response (474 chars) to 98222261428379@lid
+2026-05-14 01:00:58,830 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 01:00:58,843 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 01:01:12,286 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='那本地完全没数据了吗？'
+2026-05-14 01:01:24,644 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=12.4s api_calls=2 response=382 chars
+2026-05-14 01:01:24,651 INFO gateway.platforms.base: [Whatsapp] Sending response (382 chars) to 98222261428379@lid
+2026-05-14 01:01:31,332 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='我从guthub上能拿回多少'
+2026-05-14 01:01:46,425 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=15.1s api_calls=4 response=521 chars
+2026-05-14 01:01:46,434 INFO gateway.platforms.base: [Whatsapp] Sending response (521 chars) to 98222261428379@lid
+2026-05-14 01:01:46,447 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 01:02:10,415 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='可以'
+2026-05-14 01:02:17,451 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=7.0s api_calls=3 response=327 chars
+2026-05-14 01:02:17,454 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 01:02:17,488 INFO gateway.platforms.base: [Whatsapp] Sending response (327 chars) to 98222261428379@lid
+2026-05-14 01:02:24,440 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='为啥有1000多个skills？？'
+2026-05-14 01:02:33,314 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=8.9s api_calls=2 response=329 chars
+2026-05-14 01:02:33,323 INFO gateway.platforms.base: [Whatsapp] Sending response (329 chars) to 98222261428379@lid
+2026-05-14 01:04:42,478 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 02:07:03,875 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:8613699871152 (idle=3871s)
+2026-05-14 02:07:03,877 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-14 03:00:44,689 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 03:00:44,952 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 03:30:03,462 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 04:00:37,652 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 04:00:57,025 ERROR cron.scheduler: Job 'b089073efba3': delivery error: WhatsApp bridge error (503): {"error":"Not connected to WhatsApp"}
+2026-05-14 04:02:15,272 INFO gateway.run: Session expiry: 1 sessions to finalize (whatsapp:1)
+2026-05-14 04:02:15,277 INFO gateway.run: Session expiry done: 1 finalized
+2026-05-14 06:00:58,595 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 08:30:08,931 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 08:37:00,302 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 09:00:00,853 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 10:00:13,236 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 10:01:56,976 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 10:51:30,341 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='openclaw可以彻底删除或者禁用吗？'
+2026-05-14 10:51:30,702 INFO [20260513_233546_a3b63ea5] agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 10:51:30,716 INFO [20260513_233546_a3b63ea5] agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 10:51:51,946 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/
+2026-05-14 10:51:51,961 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=21.6s api_calls=4 response=558 chars
+2026-05-14 10:51:51,973 INFO gateway.platforms.base: [Whatsapp] Sending response (558 chars) to 98222261428379@lid
+2026-05-14 10:52:17,436 INFO gateway.platforms.base: [Whatsapp] Sending response (123 chars) to 98222261428379@lid
+2026-05-14 11:33:34,619 INFO gateway.run: inbound message: platform=whatsapp user=Justin Ju chat=98222261428379@lid msg='选择1'
+2026-05-14 11:33:36,092 INFO [20260513_233546_a3b63ea5] agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 12:00:57,749 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 12:39:44,214 INFO gateway.run: response ready: platform=whatsapp chat=98222261428379@lid time=3969.6s api_calls=28 response=215 chars
+2026-05-14 12:39:44,229 INFO gateway.platforms.base: [Whatsapp] Sending response (215 chars) to 98222261428379@lid
+2026-05-14 12:39:46,517 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 13:43:09,266 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:whatsapp:dm:8613699871152 (idle=3805s)
+2026-05-14 13:43:09,267 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-05-14 15:00:11,673 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 18:00:24,402 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 18:30:34,472 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 18:33:58,345 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 21:01:00,897 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:57:12,374 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-05-14 22:57:12,375 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-05-14 22:57:12,377 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-05-14 22:57:12,780 INFO hermes_cli.plugins: Plugin discovery complete: 9 found, 6 enabled
+2026-05-14 22:57:13,930 INFO run_agent: Loaded environment variables from /home/ubuntu/.hermes/.env
+2026-05-14 22:57:14,848 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:57:17,325 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:57:17,336 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:57:17,773 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:57:17,784 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:58:24,218 INFO agent.auxiliary_client: Vision auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 22:58:25,842 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider deepseek (deepseek-v4-flash)
+2026-05-14 23:04:22,643 INFO agent.auxiliary_client: Auxiliary title_generation: using deepseek (deepseek-chat) at https://api.deepseek.com/v1/

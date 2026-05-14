@@ -1,0 +1,309 @@
+{
+  "jobs": [
+    {
+      "id": "c59af25785e7",
+      "name": "Skill Scout",
+      "prompt": "AUTONOMOUS TASK: \u6280\u80fd\u4fa6\u5bdf\n\n\u3010\u4efb\u52a1\u3011\n1. \u8fd0\u884c `skills_list` \u67e5\u770b\u6240\u6709\u5df2\u5b89\u88c5\u6280\u80fd\n2. \u641c\u7d22 \"openclaw.ai new skills\" \u6216 \"clawdhb new skills\" \u6700\u65b0\u52a8\u6001\n3. \u68c0\u67e5 skill-scout \u5386\u53f2\uff1acat ~/.openclaw/workspace/memory/skill-scout-*.md 2>/dev/null | tail -30\n4. \u5bf9\u6bcf\u4e2a\u53d1\u73b0\u7684\u65b0\u6280\u80fd\u505a\u5b89\u5168\u5ba1\u67e5\uff08exec/curl/wget/eval \u7b49\u5371\u9669\u6a21\u5f0f\uff09\n5. \u5199\u5165 ~/.openclaw/workspace/memory/skill-scout-$(date +%Y-%m-%d).md\n6. \u8ffd\u52a0\u5230 ~/.openclaw/workspace/SKILL_SCOUT_SUMMARY.md\uff08\u5982\u6709\u65b0\u6280\u80fd\uff09\n7. git add -A && git commit -m \"chore: skill scout $(date +%Y-%m-%d)\" || true\n\n\u3010\u8f93\u51fa\u683c\u5f0f\u3011\n## \u4eca\u65e5\u53d1\u73b0\n- [\u6280\u80fd\u540d] - [\u529f\u80fd\u63cf\u8ff0] - [\u5b89\u5168\u5219\u9644\u5b89\u88c5\u547d\u4ee4]\n## \u5b89\u5168\u5907\u6ce8\n- [\u53d1\u73b0\u7684\u95ee\u9898]\n## \u63a8\u8350\n- [\u662f\u5426\u503c\u5f97\u5b89\u88c5]",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 1 * * *",
+        "display": "0 1 * * *"
+      },
+      "schedule_display": "0 1 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:21.454510+08:00",
+      "next_run_at": "2026-05-15T01:00:00+08:00",
+      "last_run_at": "2026-05-14T01:04:42.763562+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "4b8a4a7c8966",
+      "name": "\u670d\u52a1\u5668\u5065\u5eb7\u68c0\u67e5",
+      "prompt": "AUTONOMOUS TASK: \u670d\u52a1\u5668\u5065\u5eb7\u81ea\u68c0\n\n\u3010\u7cfb\u7edf\u68c0\u67e5\u3011\n1. uptime && free -h\n2. df -h | grep -E '^/dev'\n3. cat /proc/loadavg\n4. ps aux | grep -E 'hermes|openclaw|cron' | grep -v grep | wc -l\n5. ss -s || netstat -s 2>/dev/null | head -5\n6. journalctl -p err --since \"24 hours ago\" --no-pager 2>/dev/null | tail -5\necho \"---done---\"\n\n\u3010\u683c\u5f0f\u5316\u8f93\u51fa\u3011\n\ud83d\udda5\ufe0f \u670d\u52a1\u5668\u5065\u5eb7\u62a5\u544a \u2014 $(date '+%Y-%m-%d %H:%M')\n\n\u26a1 \u7cfb\u7edf\u8d1f\u8f7d: [uptime]\n\ud83d\udcbe \u5185\u5b58: [free -h]\n\ud83d\udcbf \u78c1\u76d8: [df -h]\n\ud83d\udd27 \u8fdb\u7a0b\u6570: [hermes/openclaw/cron\u8fdb\u7a0b\u6570]\n\ud83d\udce1 \u7f51\u7edc: [ss -s]\n\ud83d\udea8 \u6700\u8fd1\u9519\u8bef: [journalctl\u8f93\u51fa\uff0c\u65e0\u5219\u5199\"\u65e0\"]\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: \u670d\u52a1\u5668\u81ea\u68c0 $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 3 * * *",
+        "display": "0 3 * * *"
+      },
+      "schedule_display": "0 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:22.458762+08:00",
+      "next_run_at": "2026-05-15T03:00:00+08:00",
+      "last_run_at": "2026-05-14T03:01:03.254447+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "c70607a2e7c7",
+      "name": "Hermes/OpenClaw \u8fd0\u884c\u68c0\u67e5",
+      "prompt": "AUTONOMOUS TASK: Hermes/OpenClaw \u8fd0\u884c\u81ea\u68c0\n\n\u3010\u68c0\u67e5\u3011\n1. pgrep -a hermes 2>/dev/null | head -3 || echo \"hermes\u672a\u8fd0\u884c\"\n2. pgrep -a openclaw 2>/dev/null | head -3 || echo \"openclaw\u672a\u8fd0\u884c\"\n3. pgrep -a node 2>/dev/null | grep -i 'openclaw\\|hermes' | head -5 || echo \"\u65e0node\u8fdb\u7a0b\"\n4. ls ~/.openclaw/logs/ 2>/dev/null | head -5\n5. tail -30 ~/.openclaw/logs/*.log 2>/dev/null | grep -iE 'error|fail|timeout' | tail -10 || echo \"\u65e0\u9519\u8bef\u65e5\u5fd7\"\n6. openclaw cron list 2>/dev/null | head -20 || echo \"openclaw cron\u4e0d\u53ef\u7528\"\necho \"---done---\"\n\n\u3010\u683c\u5f0f\u5316\u8f93\u51fa\u3011\n\ud83e\udd16 Hermes/OpenClaw \u8fd0\u884c\u62a5\u544a \u2014 $(date '+%Y-%m-%d %H:%M')\n\n\u2699\ufe0f Hermes: [\u662f\u5426\u8fd0\u884c]\n\u2699\ufe0f OpenClaw: [\u662f\u5426\u8fd0\u884c]\n\ud83d\udcdd \u65e5\u5fd7\u9519\u8bef: [\u9519\u8bef\u6458\u8981\uff0c\u65e0\u5219\u5199\"\u65e0\"]\n\u23f0 Cron\u72b6\u6001: [\u4efb\u52a1\u6570/\u72b6\u6001]\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: openclaw\u81ea\u68c0 $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 3 * * *",
+        "display": "30 3 * * *"
+      },
+      "schedule_display": "30 3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:23.463920+08:00",
+      "next_run_at": "2026-05-15T03:30:00+08:00",
+      "last_run_at": "2026-05-14T03:30:37.495351+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "b089073efba3",
+      "name": "\u5b89\u5168\u5ba1\u8ba1",
+      "prompt": "AUTONOMOUS TASK: \u5b89\u5168\u81ea\u68c0\n\n\u3010\u5b89\u5168\u68c0\u67e5\u3011\n1. last -5 2>/dev/null | grep -v reboot || echo \"\u65e0\u767b\u5f55\u8bb0\u5f55\"\n2. grep -c \"Failed password\" /var/log/auth.log 2>/dev/null | tail -1 || echo \"\u65e0\u6cd5\u8bfb\u53d6\"\n3. fail2ban-client status 2>/dev/null | head -10 || echo \"\u672a\u5b89\u88c5fail2ban\"\n4. ss -tlnp 2>/dev/null | grep -v \"127.0.0.1\\|::1\" | head -10 || netstat -tlnp 2>/dev/null | head -10\n5. cat /var/log/auth.log 2>/dev/null | tail -20 | grep -iE 'error|fail|invalid' || echo \"\u65e0\u5f02\u5e38\"\necho \"---done---\"\n\n\u3010\u683c\u5f0f\u5316\u8f93\u51fa\u3011\n\ud83d\udd12 \u5b89\u5168\u5ba1\u8ba1\u62a5\u544a \u2014 $(date '+%Y-%m-%d %H:%M')\n\n\ud83d\udeaa \u6700\u8fd1SSH\u767b\u5f55: [last -5]\n\ud83d\udd22 \u5931\u8d25\u767b\u5f55\u6b21\u6570: [grep\u7ed3\u679c]\n\ud83d\udee1\ufe0f Fail2ban: [\u72b6\u6001]\n\ud83c\udf10 \u5f00\u653e\u7aef\u53e3: [ss -tlnp]\n\u26a0\ufe0f \u5f02\u5e38: [\u6709/\u65e0]\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: \u5b89\u5168\u81ea\u68c0 $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * *",
+        "display": "0 4 * * *"
+      },
+      "schedule_display": "0 4 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:34.196332+08:00",
+      "next_run_at": "2026-05-15T04:00:00+08:00",
+      "last_run_at": "2026-05-14T04:00:57.025554+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": "delivery error: WhatsApp bridge error (503): {\"error\":\"Not connected to WhatsApp\"}",
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "8b9dcf54307f",
+      "name": "GitHub Sync",
+      "prompt": "AUTONOMOUS TASK: Runtime Backup\n\nRun the backup script to save memories/sessions/config/logs to git:\nbash /home/ubuntu/hermes-all/scripts/backup.sh\n\nThen check the backup status:\n- cd /home/ubuntu/hermes-all && git log --oneline -1\n- du -sh memories/ sessions/ 2>/dev/null\n- Report how many files were committed and whether git push succeeded.\n\nIf push failed (likely network issue), just note it - the local git backup is what matters.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */3 * * *",
+        "display": "0 */3 * * *"
+      },
+      "schedule_display": "0 */3 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 8
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:35.201032+08:00",
+      "next_run_at": "2026-05-15T00:00:00+08:00",
+      "last_run_at": "2026-05-14T21:01:15.546882+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "6b65a17ce860",
+      "name": "\u6bcf\u65e5\u81ea\u68c0\u6c47\u603b 10:00",
+      "prompt": "AUTONOMOUS TASK: \u6bcf\u65e5\u81ea\u68c0\u6c47\u603b\u63a8\u9001\n\n\u3010\u8bfb\u53d6\u4eca\u65e5\u81ea\u68c0\u7ed3\u679c\u3011\ncd /root/.openclaw/workspace\n\ngit log --oneline --since=\"$(date '+%Y-%m-%d') 00:00\" --until=\"$(date '+%Y-%m-%d') 06:00\" 2>/dev/null\necho \"---\u81ea\u68c0commits---\"\n\ngit log --oneline --since=\"$(date '+%Y-%m-%d') 00:00\" 2>/dev/null | grep -E \"\u670d\u52a1\u5668\u81ea\u68c0|openclaw\u81ea\u68c0|\u5b89\u5168\u81ea\u68c0|\u79d1\u6280\u65b0\u95fb\" | head -10\necho \"---done---\"\n\n\u3010\u683c\u5f0f\u5316\u8f93\u51fa\u3011\n\ud83d\udccb \u6bcf\u65e5\u81ea\u68c0\u6c47\u603b \u2014 $(date '+%Y-%m-%d %H:%M')\n\n\ud83d\udda5\ufe0f \u670d\u52a1\u5668: [\u6b63\u5e38\u8fd0\u884c/\u6709\u5f02\u5e38]\n\ud83e\udd16 Hermes/OpenClaw: [\u72b6\u6001]\n\ud83d\udd12 \u5b89\u5168: [\u72b6\u6001]\n\ud83d\udcf0 \u4eca\u65e5\u79d1\u6280\u65b0\u95fb: [\u5df2\u63a8\u9001/\u672a\u63a8\u9001]\n\n\u26a0\ufe0f \u9700\u5173\u6ce8\u9879: [\u5982\u6709]\n\u2705 \u6574\u4f53\u72b6\u6001: [\u6b63\u5e38/\u9700\u5173\u6ce8]\n\n\u2014\u2014\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: \u6bcf\u65e5\u81ea\u68c0\u6c47\u603b $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "display": "0 10 * * *"
+      },
+      "schedule_display": "0 10 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:04:53.348753+08:00",
+      "next_run_at": "2026-05-15T10:00:00+08:00",
+      "last_run_at": "2026-05-14T10:01:57.315995+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "11fa30d7bdb5",
+      "name": "\u6668\u95f4\u79d1\u6280\u8981\u95fb 08:30",
+      "prompt": "AUTONOMOUS TASK: \u6bcf\u65e5\u79d1\u6280\u8981\u95fb\u63a8\u9001\uff08\u6668\u95f4\uff09\n\n\u3010\u4f7f\u7528 Playwright \u6293\u53d6\u641c\u7d22\u7ed3\u679c\u3011\nnode /root/.hermes/skills/openclaw-imports/playwright-scraper-skill/scripts/playwright-simple.js \"https://www.google.com/search?q=AI+\u79d1\u6280+\u65b0\u95fb+2026&hl=zh-CN\"\n\n\u3010\u89e3\u6790\u8f93\u51fa\u3011\u63d0\u53d6\u6807\u9898\u3001\u6458\u8981\uff0c\u6574\u74065-8\u6761\n\n\u3010\u9632\u91cd\u590d\u3011git log --oneline -1 --grep=\"\u6668\u95f4\u79d1\u6280\u65b0\u95fb $(date +%Y-%m-%d)\"\uff0c\u6709\u5219\u8df3\u8fc7\n\n\u3010\u53d1\u9001\u683c\u5f0f\u3011\n\ud83c\udf05 \u6668\u95f4\u79d1\u6280\u64ad\u62a5 \u2014 $(date '+%Y-%m-%d')\n\n1. [\u6807\u9898] - [\u4e00\u53e5\u8bdd]\n2. [\u6807\u9898] - [\u4e00\u53e5\u8bdd]\n...\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: \u6668\u95f4\u79d1\u6280\u65b0\u95fb $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 8 * * *",
+        "display": "30 8 * * *"
+      },
+      "schedule_display": "30 8 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:06:09.368927+08:00",
+      "next_run_at": "2026-05-15T08:30:00+08:00",
+      "last_run_at": "2026-05-14T08:37:00.701140+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    },
+    {
+      "id": "7061c0126e35",
+      "name": "\u665a\u95f4\u79d1\u6280\u8981\u95fb 18:30",
+      "prompt": "AUTONOMOUS TASK: \u6bcf\u65e5\u79d1\u6280\u8981\u95fb\u63a8\u9001\uff08\u665a\u95f4\uff09\n\n\u3010\u4f7f\u7528 Playwright \u6293\u53d6\u641c\u7d22\u7ed3\u679c\u3011\nnode /root/.hermes/skills/openclaw-imports/playwright-scraper-skill/scripts/playwright-simple.js \"https://www.google.com/search?q=AI+\u79d1\u6280+\u65b0\u95fb+2026&hl=zh-CN\"\nnode /root/.hermes/skills/openclaw-imports/playwright-scraper-skill/scripts/playwright-simple.js \"https://www.google.com/search?q=\u534a\u5bfc\u4f53+\u82af\u7247+\u52a8\u6001+2026&hl=zh-CN\"\n\n\u3010\u89e3\u6790\u8f93\u51fa\u3011\u63d0\u53d6\u6807\u9898\u3001\u6458\u8981\uff0c\u6574\u74065-8\u6761\n\n\u3010\u9632\u91cd\u590d\u3011git log --oneline -1 --grep=\"\u665a\u95f4\u79d1\u6280\u65b0\u95fb $(date +%Y-%m-%d)\"\uff0c\u6709\u5219\u8df3\u8fc7\n\n\u3010\u53d1\u9001\u683c\u5f0f\u3011\n\ud83c\udf19 \u665a\u95f4\u79d1\u6280\u64ad\u62a5 \u2014 $(date '+%Y-%m-%d')\n\n1. [\u6807\u9898] - [\u4e00\u53e5\u8bdd]\n2. [\u6807\u9898] - [\u4e00\u53e5\u8bdd]\n...\n\n\u3010\u63d0\u4ea4\u3011cd ~/.openclaw/workspace && git add -A && git commit -m \"chore: \u665a\u95f4\u79d1\u6280\u65b0\u95fb $(date +%Y-%m-%d)\" || true",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 18 * * *",
+        "display": "30 18 * * *"
+      },
+      "schedule_display": "30 18 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-04-22T03:06:10.373134+08:00",
+      "next_run_at": "2026-05-15T18:30:00+08:00",
+      "last_run_at": "2026-05-14T18:33:58.646311+08:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "whatsapp",
+        "chat_id": "98222261428379@lid",
+        "chat_name": "Justin Ju",
+        "thread_id": null
+      }
+    }
+  ],
+  "updated_at": "2026-05-14T21:01:15.547604+08:00"
+}

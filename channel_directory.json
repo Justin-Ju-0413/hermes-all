@@ -1,0 +1,32 @@
+{
+  "updated_at": "2026-05-14T23:03:15.914152",
+  "platforms": {
+    "telegram": [],
+    "discord": [],
+    "whatsapp": [
+      {
+        "id": "98222261428379@lid",
+        "name": "Justin Ju",
+        "type": "dm",
+        "thread_id": null
+      }
+    ],
+    "slack": [],
+    "signal": [],
+    "mattermost": [],
+    "matrix": [],
+    "homeassistant": [],
+    "email": [],
+    "sms": [],
+    "dingtalk": [],
+    "feishu": [],
+    "wecom": [],
+    "wecom_callback": [],
+    "weixin": [],
+    "bluebubbles": [],
+    "qqbot": [],
+    "yuanbao": [],
+    "irc": [],
+    "teams": []
+  }
+}

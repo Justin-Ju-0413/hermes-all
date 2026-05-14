@@ -1,0 +1,76 @@
+2026-05-11 02:36:18,110 WARNING gateway.run: No user allowlists configured. All unauthorized users will be denied. Set GATEWAY_ALLOW_ALL_USERS=true in ~/.hermes/.env to allow open access, or configure platform allowlists (e.g., TELEGRAM_ALLOWED_USERS=your_id).
+2026-05-11 02:36:18,112 WARNING gateway.run: No messaging platforms enabled.
+2026-05-11 02:50:45,782 ERROR [20260511_024909_8e9eec] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 02:52:13,175 ERROR [20260511_025206_4129e5] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 02:54:21,479 WARNING agent.title_generator: Title generation failed: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ad4c is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-11 03:05:52,342 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  ubuntu    151786  5.1  7.4 797624 283992 pts/0   Sl+  03:00   0:17 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes
+  ubuntu    171737  0.0  0.1   8320  3916 pts/3    Ss   03:05   0:00 /bin/bash -c shopt -u promptvars nullglob extglob nocaseglob dotglob; . '/home/ubuntu/.codebuddy/shell-snapshots/snapshot-bash-1778439732458-hyqrrw.sh' && eval 'loginctl enable-linger ubuntu 2>/dev/null; export XDG_RUNTIME_DIR=/run/user/$(id -u ubuntu); systemctl --user daemon-reload && systemctl --user restart hermes-gateway.service && sleep 2 && systemctl --user status hermes-gateway.service'
+  ubuntu    171778  0.0  0.1  18272  6296 pts/3    S+   03:05   0:00 systemctl --user restart hermes-gateway.service
+2026-05-11 03:06:25,021 ERROR gateway.run: ✗ whatsapp error: whatsapp connect timed out after 30s
+2026-05-11 03:06:26,028 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: whatsapp connect timed out after 30s
+2026-05-11 03:07:59,009 ERROR gateway.run: ✗ whatsapp error: whatsapp connect timed out after 30s
+2026-05-11 03:08:00,016 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: whatsapp connect timed out after 30s
+2026-05-11 03:09:29,922 WARNING gateway.run: Shutdown diagnostic — other hermes processes running:
+  ubuntu    151786  4.1  7.6 871340 293316 pts/0   Sl+  03:00   0:22 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes
+  ubuntu    173238  0.9  2.0  94892 79480 pts/3    S+   03:06   0:01 /root/.hermes/hermes-agent/venv/bin/python3 /usr/local/bin/hermes setup
+  ubuntu    174783  0.5  2.6 11622888 100732 pts/3 Sl+  03:06   0:00 node /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js --pair-only --session /home/ubuntu/.hermes/whatsapp/session
+  ubuntu    184493 29.7  3.5 11853872 136596 ?     Ssl  03:09   0:01 node /root/.hermes/hermes-agent/scripts/whatsapp-bridge/bridge.js --port 3000 --session /home/ubuntu/.hermes/whatsapp/session --mode self-chat
+  ubuntu    184730  0.0  0.1   8320  3912 pts/5    Ss   03:09   0:00 /bin/bash -c shopt -u promptvars nullglob extglob nocaseglob dotglob; . '/home/ubuntu/.codebuddy/shell-snapshots/snapshot-bash-1778439732458-hyqrrw.sh' && eval 'export XDG_RUNTIME_DIR=/run/user/$(id -u ubuntu); systemctl --user stop hermes-gateway.service 2>/dev/null && echo "Service stopped" || echo "Service not running"'
+  ubuntu    184751  0.0  0.1  18272  6408 pts/5    S+   03:09   0:00 systemctl --user stop hermes-gateway.service
+2026-05-11 03:09:55,474 WARNING gateway.run: ✗ whatsapp failed to connect
+2026-05-11 03:09:56,484 ERROR gateway.run: Gateway failed to connect any configured messaging platform: whatsapp: failed to connect
+2026-05-11 03:23:56,729 ERROR asyncio: unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<Application.run_async() done, defined at /root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py:620> exception=OSError(5, 'Input/output error')>
+Traceback (most recent call last):
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 608, in run_forever
+    self._run_once()
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/asyncio/base_events.py", line 1898, in _run_once
+    event_list = self._selector.select(timeout)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.hermes/hermes-agent/cli.py", line 11878, in _signal_handler
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 746, in _run_async
+    result = await f
+             ^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 886, in run_async
+    return await _run_async(f)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 751, in _run_async
+    self._redraw(render_as_done=True)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 543, in _redraw
+    self.context.copy().run(run_in_context)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/application/application.py", line 524, in run_in_context
+    self.renderer.render(self, self.layout, is_done=render_as_done)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/renderer.py", line 732, in render
+    self.reset()
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/renderer.py", line 429, in reset
+    self.output.flush()
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/output/vt100.py", line 706, in flush
+    flush_stdout(self.stdout, data)
+  File "/root/.hermes/hermes-agent/venv/lib/python3.11/site-packages/prompt_toolkit/output/flush_stdout.py", line 37, in flush_stdout
+    stdout.flush()
+OSError: [Errno 5] Input/output error
+2026-05-13 23:32:37,907 ERROR [20260513_233115_459a25] root: Non-retryable client error: Error code: 401 - {'error': {'message': 'Authentication Fails, Your api key: ****ired is invalid', 'type': 'authentication_error', 'param': None, 'code': 'invalid_request_error'}}
+2026-05-14 04:00:57,025 ERROR cron.scheduler: Job 'b089073efba3': delivery error: WhatsApp bridge error (503): {"error":"Not connected to WhatsApp"}

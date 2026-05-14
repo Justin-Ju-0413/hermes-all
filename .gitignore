@@ -1,0 +1,40 @@
+# Secrets & auth
+auth.json
+auth.lock
+
+# Runtime data (unique per install) — but BACK UP what matters
+whatsapp/
+cache/
+sandboxes/
+hermes-agent/
+bin/
+migration/
+chrome-debug/
+interrupt_debug.log
+gateway.pid
+gateway_state.json
+processes.json
+feishu_seen_message_ids.json
+
+# Platform data
+platforms/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large runtime files — kept locally for restore, not pushed to GitHub
+state.db
+state.db-wal
+state.db-shm
+state.db-journal
+sessions/
+memories/
+models_dev_cache.json
+.skills_prompt_snapshot.json
+.howto_cache.json
+
+# node_modules — don't belong in git
+node_modules/
+skills/openclaw-imports/playwright-scraper-skill/node_modules/
+skills/openclaw-imports/playwright-scraper-skill/package-lock.json
