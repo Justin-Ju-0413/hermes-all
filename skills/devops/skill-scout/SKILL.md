@@ -208,15 +208,17 @@ When reviewing, note if two installed skills overlap in purpose:
 
 2. **tirith blocks heredoc content with emoji** — The tirith promptsec scanner flags unicode variation selectors (VS1-256, used in emoji sequences) as [MEDIUM] risk. This blocks `cat > file << 'EOF'` with emoji in the content. Workarounds: (a) omit emoji from heredoc content, (b) use the `write_file` tool instead, (c) write content to a temp file then `cat` it.
 
-3. **Workspace path may not be what cron spec says** — Cron jobs sometimes hardcode `/root/.openclaw/workspace/` but the real writable workspace is at `/home/ubuntu/.openclaw/workspace/`. Before assuming the path from context, verify with `ls -la` and a test write. The `/root/` variant is typically owned by root (755) and gives "Permission denied" for the ubuntu user running Hermes. Pro tip: test-write a sentinel file first.
+3. **`write_file` tool fails on root-owned directories** — When running as a non-root user (e.g., `ubuntu`), the `write_file` tool returns `Permission denied` if the target directory is owned by root. Workaround: write to `/tmp/` first, then use `sudo cp <tmp-path> <target-path>` and `sudo chown root:root <target-path>` via the terminal tool. This is required in any cron task whose workspace is at `/root/...` or any root-owned path. Do not skip the `chown` — git operations on root-owned files that are user-owned will also fail.
 
-4. **Git dubious ownership on cross-user repos** — Git 2.35+ refuses to operate on repos owned by a different user. Fix: `git config --global --add safe.directory <path>`. This commonly bites when the repo was initialized by root but used by ubuntu, or vice versa.
-5. **GitHub API rate limits** — Unauthenticated requests are limited to 60/hr. For heavy scouting, add token: `curl -H "Authorization: token $GITHUB_TOKEN" ...`
-6. **First run has no baseline** — Set status to "首次运行 / First run" and explain the novelty
-7. **awesome-openclaw-skills is slow to update** — Last commit may be weeks old; check `openclaw/clawhub` commits for fresher data. When the awesome list is >2 weeks stale, de-prioritize it and expand the `sort:stars` trending search instead—high-star repos like `mvanhorn/last30days-skill` will surface even if they aren't in the awesome list.
-8. **Memory may be unavailable in cron** — Always write to filesystem, don't rely on memory() tool
-9. **SKILL_SCOUT_SUMMARY.md may not exist** — Create it on first run
-10. **Sibling agent race on SKILL_SCOUT_SUMMARY.md** — When writing the cumulative summary, a sibling cron agent may have modified it between your `read` and `write`. If you get a `modified by sibling subagent` warning from your write_file tool: read the file again, merge your new content with the sibling's changes (don't overwrite), then re-write. Use `---` separators between date sections so multiple runs can be appended idempotently.
+4. **Workspace path may not be what cron spec says** — Cron jobs sometimes hardcode `/root/.openclaw/workspace/` when the real writable workspace is at `/home/ubuntu/.openclaw/workspace/`. Before assuming the path from context, verify with `whoami`, `stat <path>`, and a test write. However, note that **both paths may be legitimately active for different tasks** — some tasks target the root-owned path for system-level reporting. Check `.git` history on both to confirm which is in use. Pro tip: test-write a sentinel file first.
+
+5. **Git dubious ownership on cross-user repos** — Git 2.35+ refuses to operate on repos owned by a different user. Fix: `git config --global --add safe.directory <path>`. This commonly bites when the repo was initialized by root but used by ubuntu, or vice versa. After writing files into a root-owned repo from a non-root user, run `sudo git add` and `sudo git commit` (not `sudo -u ubuntu`) to avoid ownership mismatches.
+6. **GitHub API rate limits** — Unauthenticated requests are limited to 60/hr. For heavy scouting, add token: `curl -H "Authorization: token $GITHUB_TOKEN" ...`
+7. **First run has no baseline** — Set status to "首次运行 / First run" and explain the novelty
+8. **awesome-openclaw-skills is slow to update** — Last commit may be weeks old; check `openclaw/clawhub` commits for fresher data. When the awesome list is >2 weeks stale, de-prioritize it and expand the `sort:stars` trending search instead—high-star repos like `mvanhorn/last30days-skill` will surface even if they aren't in the awesome list.
+9. **Memory may be unavailable in cron** — Always write to filesystem, don't rely on memory() tool
+10. **SKILL_SCOUT_SUMMARY.md may not exist** — Create it on first run
+11. **Sibling agent race on SKILL_SCOUT_SUMMARY.md** — When writing the cumulative summary, a sibling cron agent may have modified it between your `read` and `write`. If you get a `modified by sibling subagent` warning from your write_file tool: read the file again, merge your new content with the sibling's changes (don't overwrite), then re-write. Use `---` separators between date sections so multiple runs can be appended idempotently.
 
 ## Required Tools
 
@@ -240,4 +242,5 @@ When reviewing, note if two installed skills overlap in purpose:
 
 - `references/2026-05-14-findings.md` — First-run findings from ecosystem scan
 - `references/workspace-path-resolution.md` — Workspace path detection for cron/autonomous tasks
+- `references/system-diagnostics-commands.md` — Reusable system health check commands (uptime, disk, mem, git log, service checks)
 - `references/service-health-overview.md` — Known system service health (failing services, resources)
