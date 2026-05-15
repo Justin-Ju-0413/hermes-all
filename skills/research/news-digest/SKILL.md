@@ -28,6 +28,7 @@ Aggregate a daily tech/ai news briefing from multiple reliable sources, with bui
 | **Ars Technica RSS** | RSS | `https://feeds.arstechnica.com/arstechnica/index` | ✅ Excellent |
 | **奇客Solidot (Chinese)** | RSS | `https://www.solidot.org/index.rss` | ✅ Excellent |
 | **The Verge** | HTML | `https://theverge.com` | ✅ Good (works from China VPS) |
+| **GitHub API (Trending)** | Search API | `https://api.github.com/search/repositories?q=created:>DATE+stars:>1000&sort=stars&order=desc` | ✅ Excellent |
 | **HN Algolia API** | Search API | `https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=20` | ✅ Good (rate limited) |
 
 ### Why these work from VPS/cloud environments
